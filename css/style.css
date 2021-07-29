@@ -1,0 +1,278 @@
+/* -----Common CSS----- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #2D25A0;
+}
+.container{
+    max-width: 1160px;
+    margin: auto;
+    background: #ffff;
+}
+
+
+/*----- Navbar---- */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    background: #2D25A0;;
+   
+    
+}
+.nav-menu{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+}
+.menu-item{
+    cursor: pointer;
+    margin: 0 6px;
+    padding: 6px 16px;
+    color: #ffff;
+    font-weight: 400;
+}
+
+
+.nav-login a{
+    color: #ffff;
+    background: crimson;
+    padding: 5px 15px ;
+    text-decoration: none;
+   
+}
+
+/*------ Banner------ */
+   
+.banner-section{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    background: #2D25A0;
+}
+
+.banner-text h1{
+    color: #ffff;
+    font-size: 64px;
+    margin-right: 102px;
+    
+    
+}
+.banner-text a{
+    text-decoration: none;
+    color: #ffff;
+    background: crimson;
+    padding: 10px 30px;
+}
+
+.banner-image img{
+      width: 100%;
+    
+}
+.banner-section:hover .banner-image img{
+    transform: scale(1.1);
+    transition: transform 1s ease-in-out;
+}
+
+/*------ player-catagory------  */
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr );
+    grid-column-gap: 27px;
+    grid-row-gap: 27px;
+    padding: 30px;
+    
+    align-items: center;
+ }
+
+.player{
+  
+    padding: 10px;
+    box-shadow: 5px 10px 10px #888888;
+    overflow: hidden;
+   
+}
+.player:hover{
+    transform: scale(1.2);
+    transition: transform  ease-in-out 0.5s;
+    box-shadow: none;
+}
+
+.player .player-image img{
+    width: 100%;
+  
+}
+.player-detail h3{
+    color: #18191F;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+.player-detail p{
+   color:#6C6C6C ;  
+}
+
+/*----- Highlight-Section ------ */
+.highlight-section{
+    display: flex;
+    
+    
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    background: #ffff;
+    margin: 75px;
+}
+.highlight-text h1{
+    color:  #0A0826;
+    font-size: 48px;
+    margin-right: 102px;
+    
+    
+}
+.highlight-text p{
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight:400;
+    line-height: 28px;
+    padding-bottom: 15px;
+}
+.highlight-text a{
+    text-decoration: none;
+    color: #ffff;
+    background: crimson;
+    padding: 10px 30px;
+   
+
+}
+.highlight-image img{
+    width: 100%;
+  
+}
+/*------ brands------ */
+
+.brand-title {
+    font-size: 24px;
+    color: #562EFF;
+    font-weight:500;
+    font-style:normal;
+    margin-top: 5px;
+    text-align: center;
+    
+}
+
+.brands{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 60px;
+   
+}
+.brand img{
+    width: 100%;
+}
+
+/* ------Subscribe-section------- */
+.subscribe-section .container{
+    padding: 80px;
+    border-radius: 20px;
+    background: #dfd7f9 ;
+}
+.subscribe-section h2{
+    font-family: 'Poppins', sans-serif;
+    width: 70%;
+    margin: auto;
+    color: gray;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 10px;
+
+
+}
+hr{
+    border: 2px solid gray;
+}
+.input-group{
+    padding: 33px 290px;
+}
+.subscribe-section input{
+    padding: 10px 30px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+.subscribe-section input:hover{
+    color: honeydew;
+    background: red;
+}
+/*------ Footer part------- */
+.footer-content{
+    padding: 30px;
+}
+.footer-content img{
+    width: 480px;
+    margin-left: 300px;
+}
+.footer-icon{
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    
+}
+.footer-icon i{
+     margin: 14px;
+     color: gray;
+     font-size: 20px;
+     font-weight: 700;
+}
+.footer-text h6{
+    text-align: center;
+    font-size: 18px;
+   
+}
+/*-------- Media query -------*/
+
+/* ------Mobile Device------ */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .players{
+         grid-template-columns: repeat(1, 1fr );
+    }
+    .navbar{
+        display: none;
+    }
+    
+    
+    .footer-content{
+        display: none;
+    }
+   
+}
+/*------ Tablat Device------- */
+@media only screen and (min-width: 688px) and (max-width:992px)
+{
+
+    .container{
+        width: 100%;
+    }
+   .navbar{
+       display: none;
+   }
+    .players{
+        grid-template-columns: repeat(2, 1fr );
+    }
+
+}
